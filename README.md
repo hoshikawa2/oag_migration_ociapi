@@ -51,21 +51,21 @@ These are the steps for migration:
 This is the link to know how to export APIs definitions in the OAG: [Exporting API Gateway configuration](https://docs.oracle.com/cd/E39820_01/doc.11121/gateway_docs/content/general_export.html)
 You will get a XML file that will contain all the APIs definitions.
 
-![img_1.png](img_1.png)
+![img_1.png](images/img_1.png)
 
-![img.png](img.png)
+![img.png](images/img.png)
 
-![img_2.png](img_2.png)
+![img_2.png](images/img_2.png)
 
 ### Convert the Oracle API Gateway XML to a Swagger Specification 
 
-Change the variable filename to your exported OAG XML file (there is an example in this article named "Export_OAG.xml" if you want to test) and execute the Python generate_swagger.py file.
+Change the variable filename to your exported OAG XML file and execute the Python generate_swagger.py file.
 
-![img_3.png](img_3.png)
+![img_3.png](images/img_3.png)
 
-![img_4.png](img_4.png)
+![img_4.png](images/img_4.png)
 
-![img_5.png](img_5.png)
+![img_5.png](images/img_5.png)
 
 You will receive files with YAML extension. Each file is a Swagger definition for a API defined in the OAG.
 
@@ -73,11 +73,11 @@ You will get inside the Swagger definition some lines commented. This lines repr
 
 Change the map_details.py Python file to include your OAG XML definition file and a filename for you output mapping definitions.
 
-![img_6.png](img_6.png)
+![img_6.png](images/img_6.png)
 
 After run this python code, you will get a more detailed definitions for each orquestration steps mentioned previously in the Swagger.
 
-![img_7.png](img_7.png)
+![img_7.png](images/img_7.png)
 
 ### Deploy the Swagger to OCI API Gateway
 
