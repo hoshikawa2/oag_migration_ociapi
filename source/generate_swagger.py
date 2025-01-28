@@ -661,5 +661,5 @@ def parse_oag(filename):
     make_file(filename, paths)
 
 # EXECUTION
-filename = "InternetCorp.xml"
+filename = "Export_OAG.xml"
 parse_oag(filename)

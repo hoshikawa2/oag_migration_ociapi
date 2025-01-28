@@ -437,38 +437,4 @@ def write_file(filename, content):
     with open(path_name + filename, "a") as arquivo:
         arquivo.write(content + "\n")
 
-# json_list = find_paths(find_type="DealersNetworkEligibleOffers", filename="InternetVarejo.xml")
-# print(json_list)
-
-# json_list = find_remote_host(find_element=None, filename="InternetVarejo.xml")
-# print(json_list)
-
-# url = find_url(pk=[{"keys": ['TIM', 'Web Services', 'Middleware', 'CRM_Notify_SellerCommissioning'], "process": []}], filename="InternetVarejo.xml")
-
-# That's the key to find all the relationship
-# json_list = find_keys(find_element=['TIM', 'APIs', 'Order', 'POST', 'v5'], filename="InternetVarejo.xml")
-#print(json_list)
-
-# json_list = []
-# json_list.append({"keys": ["TIM", "APIs", "Order", "POST", "v5"], "process": "POST v5 Order"})
-
-# json_list = find_processes(processes=json_list, filename="InternetVarejo.xml")
-# print(json_list)
-
-# json_list = find_process_by_key(key=['TIM', 'APIs', 'Order', 'POST', 'v5'], filename="InternetVarejo.xml")
-# for item in json_list:
-#     for property in item["properties"]:
-#         if (property["fval"] == "name"):
-#             print(property["value"] + ":")
-#             for property2 in item["properties"]:
-#                 if property2["fval"] != "name":
-#                     print("     (", item["type"], "): ", property2["fval"], ": ", property2["value"], item["process"])
-
-
-# json_list = find_urls(find_type="ConnectToURLFilter", find_element="url", filename="InternetVarejo.xml")
-# print(json_list)
-
-# json_list = find_EnvironmentalizedFieldString(find_element=['TIM', 'APIs', 'Loyalties', 'IMEI', 'ID', 'Eligibility', 'GET', 'v2'], filename="InternetVarejo.xml")
-# print(json_list)
-
-make_mapping(filename="InternetCorp.xml", output_filename="InternetCorp-mapping.txt")
+make_mapping(filename="Export_OAG.xml", output_filename="OAG-mapping.txt")
