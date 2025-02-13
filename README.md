@@ -59,7 +59,7 @@ You will get a XML file that will contain all the APIs definitions.
 
 ### Convert the Oracle API Gateway XML to a Swagger Specification 
 
-Change the variable filename to your exported OAG XML file and execute the Python generate_swagger.py file.
+Change the variable filename to your exported OAG XML file and execute the Python [generate_swagger.py](./source/generate_swagger.py) file.
 
 ![img_3.png](images/img_3.png)
 
@@ -71,7 +71,7 @@ You will receive files with YAML extension. Each file is a Swagger definition fo
 
 You will get inside the Swagger definition some lines commented. This lines represent the OAG orquestration on each API. This will help to plan and construct the orquestration in OIC.
 
-Change the map_details.py Python file to include your OAG XML definition file and a filename for you output mapping definitions.
+Change the [map_details.py](./source/map_details.py) Python file to include your OAG XML definition file and a filename for you output mapping definitions.
 
 ![img_6.png](images/img_6.png)
 
